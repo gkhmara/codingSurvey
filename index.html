@@ -20,6 +20,16 @@
         <input id="name" class="form-control" type="text">
       </div>
 
+      <div class="form-group">
+        <label for="soup">What is your favorite type of soup?</label>
+        <select class="form-control" id="soup" type="text">
+          <option value="tomatoSoup">Tomato Soup</option>
+          <option value="peaSoup">Pea Soup</option>
+        </select>
+
+
+      </div>
+
       <!-- Submit Button -->
       <button type="submit" class="btn">Enter Answers</button>
       </form>
@@ -27,8 +37,20 @@
       <!-- Results -->
       <div id="results">
         <ul>
+          
           <li>Your name is <span class="name"></span></li>
-        </ul>
+          
+            <li>
+              <div id="tomato">
+                <p>You chose Tomato Soup</p>
+              </div>
+              <div id="pea">
+                <p>You chose Pea Soup</p>
+              </div>
+            </li>
+
+          </ul>
+
       </div>
 
   </div>
