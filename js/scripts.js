@@ -7,6 +7,7 @@ $(document).ready(function(){
     const nameInput=$("input#name").val();
     const soup = $("select#soup").val();
     const hat = $("select#hat").val();
+    const buttonLever = $("select#buttonLever").val();
 
     //Name Question
     $(".name").text(nameInput);
@@ -27,6 +28,15 @@ $(document).ready(function(){
     } else if (hat === 'shortHat') {
       $("#shortHat").show();
       $("#tallHat").hide();
+    }
+
+    //Switch Question
+    if (buttonLever === 'button') {
+      $("#button").show();
+      $("#lever").hide();
+    } else if (buttonLever === 'lever') {
+      $("#lever").show();
+      $("#button").hide();
     }
 
     //FINAL RESULTS TEST
@@ -58,6 +68,7 @@ $(document).ready(function(){
     alert(nameInput);
     alert(soup);
     alert(hat);
+    alert(buttonLever);
 
     $("#results").show();
 

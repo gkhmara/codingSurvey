@@ -19,3 +19,7 @@
 #one, #two, #three, #four {
   display: none;
 }
+
+#button, #lever {
+  display: none;
+}
