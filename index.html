@@ -12,14 +12,15 @@
   <div class="container">
     <h1>Welcome to your coding survey!</h1>
     <p>PUT IN TEXT HERE DESCRIBING THE CODING SURVEY</p>
+    
+    <!-- Survey Questions -->
     <form id="survey">
-
-      <!-- Survey Questions -->
+      <!-- Name Input -->
       <div class="form-group">
         <label for="name">What is your name?</label>
         <input id="name" class="form-control" type="text">
       </div>
-
+      <!-- Ouestion One -->
       <div class="form-group">
         <label for="soup">What is your favorite type of soup?</label>
         <select class="form-control" id="soup" type="text">
@@ -27,7 +28,7 @@
           <option value="peaSoup">Pea Soup</option>
         </select>
       </div>
-
+      <!-- Question Two -->
       <div class="form-group">
         <label for="hat">What type of hat do you like to wear?</label>
         <select class="form-control" id="hat" type="text">
@@ -35,7 +36,7 @@
           <option value="shortHat">Short Hat</option>
         </select>
       </div>
-
+      <!-- Question Three -->
       <div class="form-group">
         <label for="switch">Do you like pushing buttons or pulling levers?</label>
         <select class="form-control" id="buttonLever" type="text">
@@ -43,17 +44,33 @@
           <option value="lever">Lever</option>
         </select>
       </div>
+      <!-- Question Four -->
+      <div class="form-group">
+        <label for="food">Would you rather hunt or farm for your food?</label>
+        <select class="form-control" id="food" type="text">
+          <option value="hunt">Hunt</option>
+          <option value="farm">Farm</option>
+        </select>
+      </div>
+      <!-- Question Five -->
+      <div class="form-group">
+        <label for="grapes">Do you prefer green or purple grapes?</label>
+        <select class="form-control" id="grapes" type="text">
+          <option value="green">Green Grapes</option>
+          <option value="purple">Purple Grapes</option>
+        </select>
+      </div>
 
       <!-- Submit Button -->
       <button type="submit" class="btn">Enter Answers</button>
-      </form>
+    </form>
       
       <!-- Results -->
       <div id="results">
         <ul>
-          
+          <!-- Input Name -->
           <li>Your name is <span class="name"></span></li>
-          
+            <!-- Ouestion One Output-->
             <li>
               <div id="tomato">
                 <p>You chose Tomato Soup</p>
@@ -62,7 +79,7 @@
                 <p>You chose Pea Soup</p>
               </div>
             </li>
-
+            <!-- Question Two Output-->
             <li>
               <div id="tallHat">
                 <p>You like to wearing tall hats.</p>
@@ -71,7 +88,7 @@
                 <p>You like wearing short hats.</p>
               </div>
             </li>
-
+            <!-- Question Three Output -->
             <li>
               <div id="button">
                 <p>Pushing buttons is fun. Good choice!</p>
@@ -80,7 +97,25 @@
                 <p>Pulling levers is the best. You made a good choice!</p>
               </div>
             </li>
-
+            <!-- Question Four Output -->
+            <li>
+              <div id="hunt">
+                <p>Hunting for your food is hard. Good Luck!</p>
+              </div>
+              <div id="farm">
+                <p>Farming for your food takes a long time. I hope you've eaten recently.</p>
+              </div>
+            </li>
+            <!-- Question Four Output -->
+            <li>
+              <div id="green">
+                <p>Green grapes are the best! I love them!</p>
+              </div>
+              <div id="purple">
+                <p>Purple grapes are good for Jam. You should make some jam!</p>
+              </div>
+            </li>
+            <!-- Final Results -->
             <li>
               <div id="one">
                 <p>Ruby is the language you should learn.</p>

@@ -8,11 +8,13 @@ $(document).ready(function(){
     const soup = $("select#soup").val();
     const hat = $("select#hat").val();
     const buttonLever = $("select#buttonLever").val();
+    const food = $("select#food").val();
+    const grapes = $("select#grapes").val();
 
     //Name Question
     $(".name").text(nameInput);
 
-    //Soup Question
+    //Question One
     if (soup === 'tomatoSoup') {
       $("#tomato").show();
       $("#pea").hide();
@@ -21,7 +23,7 @@ $(document).ready(function(){
       $("#tomato").hide();
     }
 
-    //Hat Question
+    //Question Two
     if (hat === 'tallHat') {
       $("#tallHat").show();
       $("#shortHat").hide();
@@ -30,13 +32,46 @@ $(document).ready(function(){
       $("#tallHat").hide();
     }
 
-    //Switch Question
+    //Question Three
     if (buttonLever === 'button') {
       $("#button").show();
       $("#lever").hide();
     } else if (buttonLever === 'lever') {
       $("#lever").show();
       $("#button").hide();
+    }
+
+    //Question Four
+    if (food === 'hunt') {
+      $("#hunt").show();
+      $("#farm").hide();
+    } else if (food === 'farm') {
+      $("#farm").show();
+      $("#hunt").hide();
+    }
+
+    //Question Five
+    if (grapes === 'green') {
+      $("#green").show();
+      $("#purple").hide();
+    } else if (grapes === 'purple') {
+      $("#purple").show();
+      $("#green").hide();
+    }
+
+     //ACTUAL FINAL OUTPUT
+     if ((soup === 'tomatoSoup' && hat === 'tallHat' && buttonLever === 'button') || (soup === 'peaSoup' && hat === 'tallHat' && buttonLever === 'button')) {
+      $('#one').show();
+      $('#two').hide();
+      $('#three').hide();
+    } else if ((soup === 'tomatoSoup' && hat === 'tallHat' && buttonLever === 'lever') || (soup === 'peaSoup' && hat === 'tallHat' && buttonLever === 'lever')) {
+      $('#two').show();
+      $('#one').hide();
+      $('#three').hide();
+    } else if ((soup === 'tomatoSoup' && hat === 'shortHat' && buttonLever === 'button')  || (soup === 'peaSoup' && hat === 'shortHat' && buttonLever === 'button')) {
+      $('#three').show();
+      $('#one').hide();
+      $('#two').hide();
     }
 
     //FINAL RESULTS TEST
@@ -114,27 +149,13 @@ $(document).ready(function(){
     //   $('#seven').hide();
     // }
 
-    //ACTUAL FINAL OUTPUT
-    if ((soup === 'tomatoSoup' && hat === 'tallHat' && buttonLever === 'button') || (soup === 'peaSoup' && hat === 'tallHat' && buttonLever === 'button')) {
-      $('#one').show();
-      $('#two').hide();
-      $('#three').hide();
-    } else if ((soup === 'tomatoSoup' && hat === 'tallHat' && buttonLever === 'lever') || (soup === 'peaSoup' && hat === 'tallHat' && buttonLever === 'lever')) {
-      $('#two').show();
-      $('#one').hide();
-      $('#three').hide();
-    } else if ((soup === 'tomatoSoup' && hat === 'shortHat' && buttonLever === 'button')  || (soup === 'peaSoup' && hat === 'shortHat' && buttonLever === 'button')) {
-      $('#three').show();
-      $('#one').hide();
-      $('#two').hide();
-    }
-
-
     //TEST CODE
     alert(nameInput);
     alert(soup);
     alert(hat);
     alert(buttonLever);
+    alert(food);
+    alert(grapes);
 
     $("#results").show();
 
