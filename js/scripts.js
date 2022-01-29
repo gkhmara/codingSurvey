@@ -60,19 +60,31 @@ $(document).ready(function(){
     }
 
      //ACTUAL FINAL OUTPUT
-     if ((soup === 'tomatoSoup' && hat === 'tallHat' && buttonLever === 'button') || (soup === 'peaSoup' && hat === 'tallHat' && buttonLever === 'button')) {
+     if (soup === 'tomatoSoup') {
       $('#one').show();
       $('#two').hide();
       $('#three').hide();
-    } else if ((soup === 'tomatoSoup' && hat === 'tallHat' && buttonLever === 'lever') || (soup === 'peaSoup' && hat === 'tallHat' && buttonLever === 'lever')) {
+    } else if (soup === 'peaSoup') {
       $('#two').show();
       $('#one').hide();
       $('#three').hide();
-    } else if ((soup === 'tomatoSoup' && hat === 'shortHat' && buttonLever === 'button')  || (soup === 'peaSoup' && hat === 'shortHat' && buttonLever === 'button')) {
+    } else if (hat === 'tallHat') {
       $('#three').show();
       $('#one').hide();
       $('#two').hide();
-    }
+    } else if (hat === 'shortHat') {
+      $('#one').show();
+      $('#two').hide();
+      $('#three').hide();
+    } else if (buttonLever === 'button') {
+      $('#two').show();
+      $('#one').hide();
+      $('#three').hide();
+    } else if (buttonLever === 'lever') {
+      $('#three').show();
+      $('#one').hide();
+      $('#two').hide();
+    } else if (food === 'hunt')
 
     //FINAL RESULTS TEST
     // if (soup === 'tomatoSoup' && hat === 'tallHat' && buttonLever === 'button') {
