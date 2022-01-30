@@ -1,6 +1,23 @@
+body {
+  background-color: #F4F1DE;
+}
+
+.heading {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #E07A5F;
+  text-align: center;
+  margin: auto;
+  padding: 2%;
+  width: 30%;
+  height: auto;
+  display: block;
+  clear: both;
+}
+
 .btn {
   display: block;
-  background-color: lightslategray;
+  background-color: #3D405B;
+  color: white;
   font-weight: bold; 
 }
 
@@ -10,8 +27,19 @@
 
 #error {
   display: none;
+  color: red;
 }
 
 #results {
   display: none;
+  color: #81B29A;
+  margin: auto;
+  padding: 5%;
+  width: 30%;
+  height: auto;
+  clear: both;
+}
+
+li {
+  list-style: none;
 }

@@ -55,11 +55,6 @@ $(document).ready(function(){
       }
     }
 
-    //TESTCODE
-    alert(typeof nameInput);
-    alert(nameInput.length)
-    alert(Boolean(nameInput))
-
     $("#results").show();
 
     event.preventDefault();
