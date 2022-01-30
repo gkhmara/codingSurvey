@@ -4,22 +4,14 @@
   font-weight: bold; 
 }
 
+#nameOutput {
+  display: none;
+}
+
+#error {
+  display: none;
+}
+
 #results {
   display: none;
 }
-
-/* #tomato, #pea {
-  display: none;
-}
-
-#tallHat, #shortHat {
-  display: none;
-}
-
-#one, #two, #three, #four {
-  display: none;
-}
-
-#button, #lever {
-  display: none;
-} */
